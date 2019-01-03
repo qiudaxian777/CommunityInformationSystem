@@ -79,13 +79,13 @@
         android:layout_marginTop="35dp"
         android:text="添加"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/ban_main_query"
+        app:layout_constraintEnd_toStartOf="@+id/btn_main_query"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_main_id" />
 
     <Button
-        android:id="@+id/ban_main_query"
+        android:id="@+id/btn_main_query"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="查询"
@@ -101,10 +101,10 @@
         android:layout_height="wrap_content"
         android:text="修改"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/ban_main_query"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_query"
         app:layout_constraintEnd_toStartOf="@+id/btn_main_delete"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ban_main_query" />
+        app:layout_constraintStart_toEndOf="@+id/btn_main_query" />
 
     <Button
         android:id="@+id/btn_main_delete"
