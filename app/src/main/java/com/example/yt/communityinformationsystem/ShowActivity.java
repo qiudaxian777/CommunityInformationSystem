@@ -18,11 +18,11 @@ public class ShowActivity extends AppCompatActivity {
         Intent intent=getIntent();
         String name=intent.getStringExtra("name");
         String password=intent.getStringExtra("password");
-        tvName =(TextView)findViewById(R.id.tv_show_name);
-        tvPassword=(TextView)findViewById(R.id.tv_show_password);
+        tvName =findViewById(R.id.tv_show_name);
+        tvPassword=findViewById(R.id.tv_show_password);
         tvName.setText("用户名："+ name);
         tvPassword.setText("密     码："+ password);
-        btnEnter=(Button)findViewById(R.id.btn_show_enter);
+        btnEnter=findViewById(R.id.btn_show_enter);
         btnEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

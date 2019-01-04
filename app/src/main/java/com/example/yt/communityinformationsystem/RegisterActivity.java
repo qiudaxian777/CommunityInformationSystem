@@ -16,8 +16,8 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        edtTxtName=(EditText)findViewById(R.id.edtTxt_regist_name);
-        edtTxtPassword=(EditText)findViewById(R.id.edtTxt_regist_password);
+        edtTxtName=findViewById(R.id.edtTxt_regist_name);
+        edtTxtPassword=findViewById(R.id.edtTxt_regist_password);
         btnSend=findViewById(R.id.btn_regist_send);
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         init();
     }
     private void init() {
-        edtTxtName=(EditText) findViewById(R.id.edtTxt_main_name);
-        edtTxtId=(EditText) findViewById(R.id.edtTxt_main_id);
-        tvShow=(TextView)findViewById(R.id.tv_main_show);
-        btnAdd=(Button)findViewById(R.id.btn_main_add);
-        btnQuery=(Button)findViewById(R.id.btn_main_query);
-        btnUpdate=(Button)findViewById(R.id.btn_main_update);
-        btnDelete=(Button)findViewById(R.id.btn_main_delete);
+        edtTxtName= findViewById(R.id.edtTxt_main_name);
+        edtTxtId= findViewById(R.id.edtTxt_main_id);
+        tvShow=findViewById(R.id.tv_main_show);
+        btnAdd=findViewById(R.id.btn_main_add);
+        btnQuery=findViewById(R.id.btn_main_query);
+        btnUpdate=findViewById(R.id.btn_main_update);
+        btnDelete=findViewById(R.id.btn_main_delete);
         btnAdd.setOnClickListener(this);
         btnQuery.setOnClickListener(this);
         btnUpdate.setOnClickListener(this);
