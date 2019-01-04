@@ -75,7 +75,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 cursor.close();
                 db.close();
                 break;
-
+            case R.id.btn_main_update:
+                db=myHelper.getWritableDatabase();
+                values=new ContentValues();
+                values.put("id",id=edtTxtId.getText().toString());
+                db.update("information",values,"name=?",new String[]{edtTxtName.getText().toString()});
+                Toast.makeText(this,"社团信息已修改",Toast.LENGTH_LONG).show();
+                db.close();
+                break;
+            case R.id.btn_main_delete:
+                db=myHelper.getWritableDatabase();
+                db.delete("information",null,null);
+                Toast.makeText(this,"社团信息已删除",Toast.LENGTH_LONG).show();
+                tvShow.setText("");
+                db.close();
+                break;
 
         }
     }
